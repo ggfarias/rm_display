@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --black: #000;
+    --dark-green: #285430;
+    --medium-green: #5F8D4E;
+    --light-green: #A4BE7B; 
+    --pastel: #E5D9B6;
+
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #e4e1e1e3;
+}
+
+.header-container {
+    background-color: var(--medium-green);
+    width: 100%;
+    min-height: 10%;
+    text-align: center;
+}
+
+.navbar {
+    margin: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.main-container {
+    text-align: center;
+}
+
+#character-list {
+    margin: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.character-card {
+    flex: 1 0 21%;
+    max-width: 300px;
+    border: var(--black) solid;
+    border-radius: 1rem;
+    background-color: var(--pastel);
+}
+
+.character-card img {
+    border: var(--black) solid;
+    border-radius: 50%;
+    max-width: 200px;
+}
