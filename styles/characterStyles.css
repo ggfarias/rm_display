@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
-
-
-:root {
-    --black: #000;
-    --dark-green: #285430;
-    --medium-green: #5F8D4E;
-    --light-green: #A4BE7B; 
-    --pastel: #E5D9B6;
-
-}
-
 
 body {
     width: 100%;
@@ -17,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #e4e1e1e3;
+    background-color: var(--grey);
 }
 
 .header-container {
@@ -64,8 +52,10 @@ body {
 
 
 .character-card {
-    flex: 1 0 21%;
-    max-width: 300px;
+    flex-basis: 20%;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
     border: var(--black) solid;
     border-radius: 1rem;
     background-color: var(--pastel);
@@ -74,5 +64,5 @@ body {
 .character-card img {
     border: var(--black) solid;
     border-radius: 50%;
-    max-width: 200px;
+    max-width: 140px;
 }
